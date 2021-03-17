@@ -8,5 +8,5 @@
 
 <div>
     <div><label for="name">Name</label>
-    <input type="text" name="name" value={hero.name}></div>
+    <input type="text" name="name" bind:value={hero.name}></div>
 </div>
