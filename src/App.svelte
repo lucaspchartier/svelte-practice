@@ -1,5 +1,10 @@
 <script>
 	export let name;
+
+	let hero = {
+		name: "Jeff Sekinger",
+		birthYear: 1994
+	};
 </script>
 
 <main>
