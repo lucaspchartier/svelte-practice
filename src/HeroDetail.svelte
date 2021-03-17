@@ -1,5 +1,5 @@
 <script>
-
+    export let hero;
 </script>
 
 <style>
