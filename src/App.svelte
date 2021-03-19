@@ -4,16 +4,11 @@
 
 	export let name;
 
-	// let hero = {
-	// 	name: "Jeff Sekinger",
-	// 	birthYear: 1994
-	// };
-
 	let heroes = [
-		{ id: 11, name: "Jeff Sekinger", birthYear: 1994 },
-		{ id: 12, name: "Dave Portnoy", birthYear: 1977 },
-		{ id: 13, name: "Chamath Palihapitiya", birthYear: 1976 },
-		{ id: 14, name: "Cathie Wood", birthYear: 1955 }
+		{ name: "Jeff Sekinger", birthYear: 1994 },
+		{ name: "Dave Portnoy", birthYear: 1977 },
+		{ name: "Chamath Palihapitiya", birthYear: 1976 },
+		{ name: "Cathie Wood", birthYear: 1955 }
 	];
 </script>
 
