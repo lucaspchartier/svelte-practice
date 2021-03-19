@@ -5,11 +5,10 @@
 <h1>Heroes List</h1>
 <ul>
     {#each heroes as hero}
-    <li class="row">
-
-    </li>
+        <li class="row">{hero.name}</li>
     {/each}
 </ul>
+
 <style>
     ul {
         list-style-type: none;
