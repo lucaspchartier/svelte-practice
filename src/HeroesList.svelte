@@ -11,6 +11,8 @@
     {/each}
 </ul>
 
+{#if selectedHero}{selectedHero.name} is selected{/if}
+
 <style>
     ul {
         list-style-type: none;
