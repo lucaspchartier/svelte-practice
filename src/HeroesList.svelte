@@ -2,6 +2,8 @@
 
 </script>
 
+<h1>Heroes List</h1>
+
 <style>
     ul {
         list-style-type: none;
