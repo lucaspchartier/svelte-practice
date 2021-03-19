@@ -3,7 +3,13 @@
 </script>
 
 <h1>Heroes List</h1>
+<ul>
+    {#each heroes as hero}
+    <li class="row">
 
+    </li>
+    {/each}
+</ul>
 <style>
     ul {
         list-style-type: none;
