@@ -4,10 +4,12 @@
 
 	export let name;
 
-	let hero = {
-		name: "Jeff Sekinger",
-		birthYear: 1994
-	};
+	// let hero = {
+	// 	name: "Jeff Sekinger",
+	// 	birthYear: 1994
+	// };
+
+	let heroes = [];
 </script>
 
 <main>
@@ -15,7 +17,7 @@
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
-<HeroesList />
+<HeroesList {hero} />
 <!-- <HeroDetail {hero} /> -->
 
 <style>
