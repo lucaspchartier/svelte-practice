@@ -9,7 +9,12 @@
 	// 	birthYear: 1994
 	// };
 
-	let heroes = [];
+	let heroes = [
+		{ id: 11, name: "Jeff Sekinger", birthYear: 1994 },
+		{ id: 12, name: "Dave Portnoy", birthYear: 1977 },
+		{ id: 13, name: "Chamath Palihapitiya", birthYear: 1976 },
+		{ id: 14, name: "Cathie Wood", birthYear: 1955 }
+	];
 </script>
 
 <main>
