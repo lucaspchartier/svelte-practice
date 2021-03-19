@@ -1,5 +1,5 @@
 <script>
-
+    export let heroes;
 </script>
 
 <h1>Heroes List</h1>
