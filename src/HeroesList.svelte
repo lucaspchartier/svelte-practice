@@ -1,11 +1,13 @@
 <script>
     export let heroes;
+    let selectedHero;
 </script>
 
 <h1>Heroes List</h1>
 <ul>
     {#each heroes as hero}
-        <li class="row">{hero.name}</li>
+        <li class="row" on:click="{() => (selectedHero = hero)}"
+        class:selected={selectedHero === hero}>{hero.name}</li>
     {/each}
 </ul>
 
