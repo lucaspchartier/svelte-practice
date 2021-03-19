@@ -1,5 +1,6 @@
 <script>
-import HeroDetail from "./HeroDetail.svelte";
+	import HeroDetail from "./HeroDetail.svelte";
+	import HeroesList from "./HeroesList.svelte";
 
 	export let name;
 
@@ -14,7 +15,8 @@ import HeroDetail from "./HeroDetail.svelte";
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
-<HeroDetail {hero} />
+<HeroesList />
+<!-- <HeroDetail {hero} /> -->
 
 <style>
 	main {
