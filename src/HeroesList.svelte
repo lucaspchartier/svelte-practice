@@ -11,7 +11,9 @@
     {/each}
 </ul>
 
-{#if selectedHero}{selectedHero.name} is selected{/if}
+{#if selectedHero}
+    <HeroDetail hero={selectedHero} />
+{/if}
 
 <style>
     ul {
