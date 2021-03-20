@@ -1,4 +1,7 @@
 <script>
+import HeroDetail from "./HeroDetail.svelte";
+
+
     export let heroes;
     let selectedHero;
 </script>
