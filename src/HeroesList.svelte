@@ -3,6 +3,10 @@
 
     export let heroes;
     let selectedHero;
+
+    async function getPeople() {
+        const response = await fetch("https://swapi.dev/api/people");
+    }
 </script>
 
 <h1>Heroes List</h1>
