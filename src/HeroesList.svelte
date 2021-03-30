@@ -14,6 +14,13 @@
 </script>
 
 <h1>Heroes List</h1>
+{#await heroesPromise}
+    <!-- heroesPromise is pending -->
+{:then value}
+    <!-- heroesPromise was fulfilled -->
+{:catch error}
+    <!-- heroesPromise was rejected -->
+{/await}
 <ul>
     {#each heroes as hero}
         <li class="row" on:click="{() => (selectedHero = hero)}"
