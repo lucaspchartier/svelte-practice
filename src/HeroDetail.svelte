@@ -2,8 +2,10 @@
     import { createEventDispatcher} from "svelte";
     export let hero;
 
-    const saveHero = () => {
+    const dispatch = createEventDispatcher();
 
+    const saveHero = () => {
+        dispatch("saveHero", hero);
     };
 </script>
 
