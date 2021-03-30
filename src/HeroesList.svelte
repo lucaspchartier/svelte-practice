@@ -4,6 +4,8 @@
     export let heroes;
     let selectedHero;
 
+    let heroesPromise = getPeople();
+
     async function getPeople() {
         const response = await fetch("https://swapi.dev/api/people");
         const json = await response.json();
