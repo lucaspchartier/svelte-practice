@@ -1,5 +1,10 @@
 <script>
+    import { createEventDispatcher} from "svelte";
     export let hero;
+
+    const saveHero = () => {
+
+    };
 </script>
 
 <style>
@@ -13,5 +18,5 @@
         <label for="birthYear">Birth Year</label>
         <input type="text" birthYear="birth year" bind:value={hero.birthYear}>
     </div>
-    <button></button>
+    <button on:click="{saveHero}">Save</button>
 </div>
