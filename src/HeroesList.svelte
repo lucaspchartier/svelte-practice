@@ -26,6 +26,10 @@
     </ul>
 {:catch error}
     <!-- heroesPromise was rejected -->
+    <div class="error">
+        <p>The Sith have wiped out the heroes</p>
+        <p>{error}</p>
+    </div>
 {/await}
 
 {#if selectedHero}
