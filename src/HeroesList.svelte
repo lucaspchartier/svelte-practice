@@ -15,18 +15,18 @@
 
 <h1>Heroes List</h1>
 {#await heroesPromise}
-    <!-- heroesPromise is pending -->
+    Heroes are in a galaxy far far away...
 {:then value}
     <!-- heroesPromise was fulfilled -->
+    <ul>
+        {#each heroes as hero}
+            <li class="row" on:click="{() => (selectedHero = hero)}"
+            class:selected={selectedHero === hero}>{hero.name}</li>
+        {/each}
+    </ul>
 {:catch error}
     <!-- heroesPromise was rejected -->
 {/await}
-<ul>
-    {#each heroes as hero}
-        <li class="row" on:click="{() => (selectedHero = hero)}"
-        class:selected={selectedHero === hero}>{hero.name}</li>
-    {/each}
-</ul>
 
 {#if selectedHero}
     <HeroDetail hero={selectedHero} />
