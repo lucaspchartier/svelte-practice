@@ -11,6 +11,10 @@
         const json = await response.json();
         return json.results;
     }
+
+    const save = ({ detail: heroToSave }) => {
+        console.table(heroToSave);
+    };
 </script>
 
 <h1>Heroes List</h1>
@@ -33,7 +37,7 @@
 {/await}
 
 {#if selectedHero}
-    <HeroDetail hero={selectedHero} />
+    <HeroDetail hero={selectedHero} on:saveHero={save}/>
 {/if}
 
 <style>
